@@ -1,9 +1,10 @@
 # CS490 Senior Design
 =====================
-## Project Title: Under Construction
+## Project: Fun Tama
 + Applied AR Technology
-+ iOS programming
-+ Game
++ Windows Platform
++ Tama Game
++ Kinect
 
 ## Group Members:
 + [Jiaping Qi<br />](http://web.ics.purdue.edu/~qi33/)
