@@ -18,10 +18,14 @@ public class buttonDelayResponse : MonoBehaviour, IPointerEnterHandler, IPointer
 		if (isPointerEnter) {
 			counter++;
 		}
-		if (responseTime == this.counter) {
+		if (isPointerEnter && responseTime == this.counter) {
 			ResetCounter ();
-			Debug.Log (true);
+			GameObject obj = this.transform.parent.FindChild("dropDownButtonGroup").gameObject;
+			obj.SetActive (true);
+			//GameObject.Find ("dropDownButtonGroup").SetActive(true);
 		}
+
+
 	}
 
 	void ResetCounter(){
@@ -29,12 +33,15 @@ public class buttonDelayResponse : MonoBehaviour, IPointerEnterHandler, IPointer
 	}
 
 	public void OnPointerEnter(PointerEventData eventData){
+		Debug.Log ("Enter");
 		isPointerEnter = true;
 	}
 
 	public void OnPointerExit(PointerEventData eventData){
 		isPointerEnter = false;
+		Debug.Log ("Leave");
 		this.ResetCounter ();
 	}
+
 
 }
