@@ -45,7 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\script\buttonDelayResponse.cs" />
+     <Compile Include="Assets\script\buttonActiveAnotherTransform.cs" />
+     <Compile Include="Assets\script\dropDownDetailGroupControler.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

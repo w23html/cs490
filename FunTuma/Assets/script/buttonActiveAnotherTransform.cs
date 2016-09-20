@@ -2,11 +2,13 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class buttonDelayResponse : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class buttonActiveAnotherTransform : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
 	private int counter;
-	private readonly int responseTime = 200;
+	private readonly int responseTime = 100;
 	private bool isPointerEnter;
+	public Transform mytransform;
+
 	// Use this for initialization
 	void Start () {
 		counter = 0;
@@ -20,8 +22,7 @@ public class buttonDelayResponse : MonoBehaviour, IPointerEnterHandler, IPointer
 		}
 		if (isPointerEnter && responseTime == this.counter) {
 			ResetCounter ();
-			GameObject obj = this.transform.parent.FindChild("dropDownButtonGroup").gameObject;
-			obj.SetActive (true);
+			mytransform.gameObject.SetActive (true);
 			//GameObject.Find ("dropDownButtonGroup").SetActive(true);
 		}
 
@@ -33,15 +34,14 @@ public class buttonDelayResponse : MonoBehaviour, IPointerEnterHandler, IPointer
 	}
 
 	public void OnPointerEnter(PointerEventData eventData){
-		Debug.Log ("Enter");
+		//Debug.Log ("Enter");
 		isPointerEnter = true;
 	}
 
 	public void OnPointerExit(PointerEventData eventData){
 		isPointerEnter = false;
-		Debug.Log ("Leave");
+		//Debug.Log ("Leave");
 		this.ResetCounter ();
 	}
-
 
 }
