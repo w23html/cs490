@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\script\ShopController.cs" />
      <Compile Include="Assets\script\buttonActiveAnotherTransform.cs" />
      <Compile Include="Assets\script\dropDownDetailGroupControler.cs" />
  <Reference Include="UnityEngine.Networking">
