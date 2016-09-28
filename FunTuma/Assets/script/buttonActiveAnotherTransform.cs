@@ -9,6 +9,7 @@ public class buttonActiveAnotherTransform : MonoBehaviour, IPointerEnterHandler,
 	private bool isPointerEnter;
 	public Transform mytransform;
 
+
 	// Use this for initialization
 	void Start () {
 		counter = 0;
