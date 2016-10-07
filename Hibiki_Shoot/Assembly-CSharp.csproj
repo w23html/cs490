@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Lowpoly Toon Cat Lite\Demo\Cat_Lite_Demo.cs" />
      <Compile Include="Assets\Script\CoinGenerator.cs" />
+     <Compile Include="Assets\Script\DragHandler.cs" />
      <Compile Include="Assets\Script\HappyBar.cs" />
      <Compile Include="Assets\Script\HealthBar.cs" />
      <Compile Include="Assets\Script\Player.cs" />

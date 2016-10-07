@@ -38,6 +38,8 @@ public class HappyBar : MonoBehaviour {
         {
             fillAmount = fillAmount - 0.01f;
             nextTime += interval;
+			int a = (int) (fillAmount * 100);
+			valueText.text = a + "/100";
         }
         HandleBar();
 	}
