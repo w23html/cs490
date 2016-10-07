@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/funtama.unity
+- path: Assets/importable.unity
   isLoaded: 1
   isActive: 1
