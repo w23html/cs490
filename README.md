@@ -9,7 +9,6 @@
 ## Group Members:
 + [Jiaping Qi<br />](http://web.ics.purdue.edu/~qi33/)
 + Fangzhou Lin
-+ Junyu Xion
 + Qi Zhang
 + Shayin Feng
 + Chi Luo
